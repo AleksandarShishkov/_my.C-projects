@@ -12,7 +12,7 @@
 		enter three integers and test different
 		arithmetic operations on them.
 
-		An if-else if clauses are users in order
+		An if-else if clauses are used in order
 		the largest and the smallest from the 
 		three numbers to be detemrined.
 

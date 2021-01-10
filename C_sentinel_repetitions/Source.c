@@ -10,7 +10,7 @@
 		 input floating point numbers in order to
 		 calculate their total. The program uses sentinel-
 		 control repetitions trough which prints
-		 the current result and it also keeps running total
+		 the current result and it also keeps a running total
 		 for the end result.
 
 		*/

@@ -16,7 +16,7 @@
 
 
 
-#include <stdio.h>															// including the stdio header file
+#include <stdio.h>												// including the stdio header file
 
 
 int main()
@@ -24,42 +24,42 @@ int main()
 
 
 
-	int x;																	// an integer to hold the x coordinate
-	int y;																	// an integer to hold the y coordinate
-	int choice;																// an integer to hold the user`s choice
-	char new_try = 'y';														// a char for the do-while loop assigned with 'y'
+	int x;													// an integer to hold the x coordinate
+	int y;													// an integer to hold the y coordinate
+	int choice;												// an integer to hold the user`s choice
+	char new_try = 'y';											// a char for the do-while loop assigned with 'y'
 
-	do																		// entering the do-while loop
+	do													// entering the do-while loop
 	{
 
-		printf("\n\tSelect between the following:\n");						// printing the menu
+		printf("\n\tSelect between the following:\n");							// printing the menu
 		printf("\n'1' square");
 		printf("\n'2' empty square");
 		printf("\n'3' triangle");
 		printf("\n'4' empty triangle");
 		printf("\n'5' chekboard");
 
-		printf("\n> ");														// prompting the user make a selection
-		scanf_s("%d", &choice);												// assigning the input to choice
+		printf("\n> ");											// prompting the user make a selection
+		scanf_s("%d", &choice);										// assigning the input to choice
 
-		switch (choice)														// switching the choice
+		switch (choice)											// switching the choice
 		{
 		case 1:
 
-			printf("\n\tSquare\n");											// printing the selected shape`s name
+			printf("\n\tSquare\n");									// printing the selected shape`s name
 
-			printf("\nEnter x coordinate> ");								// prompting the user to input value for x
+			printf("\nEnter x coordinate> ");							// prompting the user to input value for x
 			scanf_s("%d", &x);
-			printf("\nEnter y coordinate> ");								// prompting the user to input value for y
+			printf("\nEnter y coordinate> ");							// prompting the user to input value for y
 			scanf_s("%d", &y);
 
 			printf("\n");
 
-			for (int i = 0; i < x; i++)										// entering the nested loop
+			for (int i = 0; i < x; i++)								// entering the nested loop
 			{
 				for (int j = 0; j < y; j++)
 				{
-					printf("* ");											// printing the structure
+					printf("* ");								// printing the structure
 				}
 
 				printf("\n");
@@ -69,22 +69,22 @@ int main()
 
 		case 2:														
 							
-			printf("\n\tEmpty square\n");									// printing the selected shape`s name
+			printf("\n\tEmpty square\n");								// printing the selected shape`s name
 
-			printf("\nEnter x coordinate> ");								// prompting the user to input value for x
+			printf("\nEnter x coordinate> ");							// prompting the user to input value for x
 			scanf_s("%d", &x);
-			printf("\nEnter y coordinate> ");								// prompting the user to input value for y
+			printf("\nEnter y coordinate> ");							// prompting the user to input value for y
 			scanf_s("%d", &y);
 
 			printf("\n");
 
-			for (int i = 0; i < x; i++)										// entering the nested loop
+			for (int i = 0; i < x; i++)								// entering the nested loop
 			{
 				for (int j = 0; j < y; j++)
 				{
 					if (i == 0 || i == x - 1 ||								
 						j == 0 || j == y - 1)
-						printf("* ");										// printing the structure
+						printf("* ");							// printing the structure
 					else
 						printf("  ");
 				}
@@ -96,18 +96,18 @@ int main()
 
 		case 3:
 
-			printf("\n\tTriangle\n");										// printing the selected shape`s name
+			printf("\n\tTriangle\n");								// printing the selected shape`s name
 
-			printf("\nEnter x coordinate> ");								// prompting the user to input value for x
+			printf("\nEnter x coordinate> ");							// prompting the user to input value for x
 			scanf_s("%d", &x);
 
 			printf("\n");
 
-			for (int i = 0; i < x; i++)										// entering the nested loop
+			for (int i = 0; i < x; i++)								// entering the nested loop
 			{
 				for (int j = i; j < x; j++)
 				{
-					printf("* ");											// printing the structure
+					printf("* ");								// printing the structure
 				}
 
 				printf("\n");
@@ -117,19 +117,19 @@ int main()
 
 		case 4:
 
-			printf("\n\tTriangle\n");										// printing the selected shape`s name
+			printf("\n\tTriangle\n");								// printing the selected shape`s name
 
-			printf("\nEnter x coordinate> ");								// prompting the user to input value for x
+			printf("\nEnter x coordinate> ");							// prompting the user to input value for x
 			scanf_s("%d", &x);
 
 			printf("\n");
 
-			for (int i = x - 1; i >= 0; i--)								// entering the nested loop
+			for (int i = x - 1; i >= 0; i--)							// entering the nested loop
 			{
 				for (int j = 0; j <= i; j++)
 				{
 					if (i == x - 1 || j == 0 || j == i)
-						printf("* ");										// printing the structure
+						printf("* ");							// printing the structure
 					else
 						printf("  ");
 				}
@@ -141,21 +141,21 @@ int main()
 
 		case 5:
 
-			printf("\n\tCheckboard\n");										// printing the selected shape`s name
+			printf("\n\tCheckboard\n");								// printing the selected shape`s name
 
-			printf("\nEnter x coordinate> ");								// prompting the user to input value for x
+			printf("\nEnter x coordinate> ");							// prompting the user to input value for x
 			scanf_s("%d", &x);
-			printf("\nEnter y coordinate> ");								// prompting the user to input value for y
+			printf("\nEnter y coordinate> ");							// prompting the user to input value for y
 			scanf_s("%d", &y);
 
 			printf("\n");
 
-			for (int i = 0; i < x; i++)										// entering the nested loop
+			for (int i = 0; i < x; i++)								// entering the nested loop
 			{
 				for (int j = 0; j < y; j++)
 				{
 					if (i % 2 == 0)
-						printf("* ");										// printing the structure
+						printf("* ");							// printing the structure
 					else
 						printf(" *");
 				}
@@ -168,7 +168,7 @@ int main()
 		default:
 
 			printf("\nInvalid option. Try again>\n");						// printing error message if invalid
-																			// selection is made
+														// selection is made
 
 			break;
 
@@ -177,7 +177,7 @@ int main()
 
 		getchar();
 
-		printf("\nAnother try? (y/n)> ");									// prompting the user to select new_try
+		printf("\nAnother try? (y/n)> ");								// prompting the user to select new_try
 		scanf_s("%c", &new_try);
 
 		while (new_try != 'y' && new_try != 'n')							// validating the input
@@ -187,14 +187,15 @@ int main()
 		}
 
 
-	}while (new_try == 'y');												// exiting the loop if new_try != 'y'
+	}while (new_try == 'y');										// exiting the loop if new_try != 'y'
 
 
 
 	printf("\nThe program has ended!\n\n");									// printing message indicating the end
-																			// of the program
+														// of the program
 
 
 
 	return 0;
 }
+

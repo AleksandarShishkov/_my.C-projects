@@ -6,7 +6,7 @@
 		 A C program that prompts an input
 		 from the user, validates is and
 		 prints the outputted data trough 
-		 switch cases 
+		 switch cases validation
 		 */
 
 

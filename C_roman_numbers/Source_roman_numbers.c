@@ -12,31 +12,31 @@
 
 
 
-#include <stdio.h>														// including the stdio header
+#include <stdio.h>											// including the stdio header
 
 
 int main()
 {
 
-	int num;															// an integer to hold the inputed
-																		// value
+	int num;											// an integer to hold the inputed
+													// value
 
-	int try_again = 1;													// an integer to hold 1 or -1
+	int try_again = 1;										// an integer to hold 1 or -1
 
-	while (try_again == 1)												// entering the while loop
+	while (try_again == 1)										// entering the while loop
 	{
 
-		printf("\nEnter an integer between 1 trough 30: ");				// prompting the user to enter
-		scanf_s("%d", &num);											// an integer 1-30
+		printf("\nEnter an integer between 1 trough 30: ");					// prompting the user to enter
+		scanf_s("%d", &num);									// an integer 1-30
 
-		while (num < 1 || num>30)										// validating the input
+		while (num < 1 || num>30)								// validating the input
 		{
 			printf("\nInvalid input. Try again> ");
 			scanf_s("%d", &num);
 
 		}
 		
-		switch (num)													// switching the input
+		switch (num)										// switching the input
 		{
 		case 1:
 
@@ -189,18 +189,18 @@ int main()
 			break;
 
 
-		default:														// a default case if invalid
-																		// input was entered
+		default:										// a default case if invalid
+													// input was entered
 			puts("\nInvalid input. Try again\n");
 			break;
 		}
 
 		
-		printf("\nTry again (1/-1)> ");									// prompting the user to select
-																		// 1 or -1
+		printf("\nTry again (1/-1)> ");								// prompting the user to select
+													// 1 or -1
 		scanf_s("%d", &try_again);
 
-		while (try_again != 1 &&										// validating the input
+		while (try_again != 1 &&								// validating the input
 			try_again != -1)
 		{
 			printf("\nInvalid input. Try agian (1/-1)> ");
@@ -208,8 +208,8 @@ int main()
 		}
 	}
 
-	puts("\nThe program has ended!\n");									// printing message indicating
-																		// that the program has terminated
+	puts("\nThe program has ended!\n");								// printing message indicating
+													// that the program has terminated
 
 	return 0;
 }

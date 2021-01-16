@@ -16,13 +16,13 @@
 #include <stdio.h>
 
 
-int factorial(int);															// prototype of the factorial() function
+int factorial(int);										// prototype of the factorial() function
 
 
 int main()
 {
 
-	int num = 1;															// an integer to hold the inputted number
+	int num = 1;										// an integer to hold the inputted number
 
 	while (num != 0)
 	{
@@ -30,13 +30,13 @@ int main()
 		puts("\nEnter an integer. To quit entering press '0' > ");			// prompting the user to enter an integer
 		scanf_s("%d", &num);
 
-		if (num < 0)														// validating the input
+		if (num < 0)									// validating the input
 			puts("\nInvalid integer.");
 		else if (num == 0)
 			puts("\nThe program has ended!\n");
 		else
 			printf("\nFactorial of !%d is: %d\n", num, factorial(num));		// calling the factorial() function
-																			// and printing the result
+												// and printing the result
 	}
 
 
@@ -44,8 +44,8 @@ int main()
 }
 
 
-int factorial(int num)														// definition of the factorial() function
-{																			// with an argument for the inputted number
+int factorial(int num)										// definition of the factorial() function
+{												// with an argument for the inputted number
 
 	if (num < 1)
 		return 1;

@@ -9,7 +9,7 @@
 		 to the first one.
  
 		 The calculations are made trough serie of
-		 iterations in which multiple() sunction is called. 
+		 iterations in which the multiple() function is called. 
 		 To quit entering the user presses '-1'
 		 */
 

@@ -4,7 +4,7 @@
 /*
  A C program that prompts an input
  from the user for the size and the
- elements of an dynamicalli allocated array.
+ elements of an dynamically allocated array.
  
  It then sort`s the array and prints all
  of the elements whose value does not repete
